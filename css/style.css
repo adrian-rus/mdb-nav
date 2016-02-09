@@ -1,4 +1,4 @@
-movie-nav .list-inline>li {
+/*movie-nav .list-inline>li {
 	padding: 10px 15px;
 }
  
@@ -14,4 +14,72 @@ movie-nav .list-inline > li > a:hover {
 movie-nav .list-inline > li > a.active {
 	background-color: #337AB7; 
 	color: white;
+}
+*/
+
+body{
+	background-color: lightyellow;
+}
+.navbar {
+	border-radius: 0;
+}
+
+
+select {
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 1.4em;
+}
+
+.btnLink { 
+	border: 3px solid grey; 
+	padding: 5px; 
+	margin: 60px; 
+	font-size: large; 
+	text-decoration: none; 
+	color: grey;
+}
+
+div.homePage {
+  background: transparent;
+  font-size: large;
+  text-align: center;
+}
+
+div.homePage h1{
+  background: transparent;
+  font-size: 300%;
+}
+
+div.repeat:nth-child(6n+0):after {
+	display: table; 
+	content: " "; 
+	clear: both;
+}
+
+div.repeat:nth-child(6n+1):{
+	clear: both;
+}
+
+/* Portrait tablets and small desktops  col-sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+   div.repeat:nth-child(3n+1){ 
+   	clear: both
+   }
+}
+ 
+/* Landscape phones and portrait tablets  col-xs*/
+@media (max-width: 767px) {
+  div.repeat:nth-child(2n+1){ 
+  	clear: both
+  }
+ 
+}
+ 
+/* Portrait phones and smaller  col-xs*/
+@media (max-width: 480px) {
+  div.repeat:nth-child(2n+1) {
+   clear: both
+}
+ 
 }
